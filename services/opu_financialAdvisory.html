@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Consulting Services - Strategic Advisory for Growth</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Load Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="/js/LanguageTranslation.js"></script>
+    <!-- Configure Tailwind Colors & Font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1F2937;
+        }
+
+        /* Color definitions */
+        .text-primary {
+            color: var(--color-primary);
+        }
+
+        .bg-primary {
+            background-color: var(--color-primary);
+        }
+
+        .hover\:bg-primary:hover {
+            background-color: var(--color-primary);
+        }
+
+        .text-secondary {
+            color: var(--color-secondary);
+        }
+
+        .bg-secondary {
+            background-color: var(--color-secondary);
+        }
+
+        .hover\:bg-secondary:hover {
+            background-color: var(--color-secondary);
+        }
+
+        .border-secondary {
+            border-color: var(--color-secondary);
+        }
+
+        .hover\:text-secondary:hover {
+            color: var(--color-secondary);
+        }
+
+        /* Custom animation for staggered load */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fadeInUp {
+            animation: fadeInUp 0.5s ease-out forwards;
+            opacity: 0;
+            /* Start hidden */
+        }
+
+        /* Custom Stepper styles for the process section */
+        .step-number {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 3rem;
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 9999px;
+            font-size: 1.5rem;
+            font-weight: 700;
+            z-index: 10;
+        }
+
+        /* Hover effect for the process cards */
+        .compliance-card:hover {
+            box-shadow: 0 20px 25px -5px rgba(6, 78, 59, 0.1), 0 8px 10px -6px rgba(6, 78, 59, 0.1);
+            /* Subtle green shadow */
+            border-color: var(--color-primary);
+        }
+
+        .twelve h1 {
+            /* font-size: 26px; */
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            width: max-content;
+            text-align: center;
+            margin: auto;
+            white-space: nowrap;
+            padding-bottom: 13px;
+        }
+
+        .twelve h1:before {
+            background-color: #064e3b;
+            content: '';
+            display: block;
+            height: 3px;
+            width: 75px;
+            margin-bottom: 5px;
+        }
+
+        .twelve h1:after {
+            background-color: #064e3b;
+            content: '';
+            display: block;
+            position: absolute;
+            left: 55%;
+            height: 3px;
+            width: 75px;
+            margin-bottom: 0.25em;
+        }
+    </style>
+</head>
+
+<body class="bg-white antialiased">
+
+    <!-- Navbar (Consistent) -->
+    <div id="header"></div>
+    <!-- End Navbar -->
+
+    <main>
+        <div class="twelve pt-28 sm:pt-28 bg-gray-50">
+            <h1 class="text-lg md:text-2xl">Financial Consulting</h1>
+        </div>
+        <!-- 1. HERO SECTION: Financial Consulting Overview -->
+        <section id="hero" class="relative py-10 sm:py-10 bg-gray-50 ">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
+                <div class="lg:grid lg:grid-cols-12 lg:gap-10 items-center">
+                    <!-- Left Content -->
+                    <div class="lg:col-span-7">
+                        <p class="mb-3 inline-block px-4 py-1 text-xs font-bold uppercase tracking-widest rounded-full bg-green-100 text-primary animate-fadeInUp"
+                            style="animation-delay: 0.1s;">
+                            Data-Driven Financial Strategy
+                        </p>
+                        <h1 class="mt-4 text-5xl sm:text-7xl font-extrabold text-gray-900 leading-tight animate-fadeInUp"
+                            style="animation-delay: 0.2s;">
+                            Maximize Growth with <span class="text-primary">Financial Advisory.</span>
+                        </h1>
+                        <p class="mt-6 text-xl text-gray-700 animate-fadeInUp" style="animation-delay: 0.3s;">
+                            Strategic financial advisory to support key decision-making and business growth
+                            through expert analysis, rigorous planning, and actionable insights (Non-Securities focus).
+                        </p>
+                        <div class="mt-12 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 animate-fadeInUp"
+                            style="animation-delay: 0.4s;">
+                            <a href="/contact.html"
+                                class="inline-flex items-center justify-center px-10 py-4 border border-transparent text-base font-bold rounded-xl shadow-lg text-white bg-primary hover:bg-green-700 transition duration-300 transform hover:scale-[1.02]">
+                                Request Advisory Session
+                            </a>
+                            <!-- <a href="#ongoing-support"
+                                class="inline-flex items-center justify-center px-10 py-4 text-base font-bold rounded-xl border-2 border-secondary text-secondary bg-white hover:bg-green-50 transition duration-300">
+                                Explore Core Services
+                            </a> -->
+                        </div>
+                    </div>
+                    <!-- Right Icon/Visual -->
+                    <div class="lg:col-span-5 mt-12 lg:mt-0 flex justify-center items-center">
+                        <i data-lucide="chart-no-axes-combined"
+                            class="w-32 h-32 sm:w-48 sm:h-48 text-primary/50 opacity-80 animate-fadeInUp"
+                            style="animation-delay: 0.5s;"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. CORE SERVICES (The Three Pillars) -->
+        <section id="solutions" class="py-20 sm:py-12 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-extrabold text-secondary">Three Pillars of Financial Strategy</h2>
+                    <p class="mt-3 text-xl text-gray-600 max-w-3xl mx-auto">We provide comprehensive, non-securities
+                        advisory for growth, efficiency, and stability.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+
+                    <!-- Solution 1: Feasibility studies and business plans -->
+                    <div
+                        class="compliance-card relative p-6 pt-16 bg-white rounded-xl shadow-lg border-2 border-gray-100 transition-all duration-300 transform hover:-translate-y-1">
+                        <div class="step-number bg-primary text-white shadow-xl">1</div>
+                        <h3 class="mt-2 text-2xl font-bold text-gray-900">Feasibility Studies & Plans</h3>
+                        <p class="mt-3 text-gray-600">
+                            Detailed reports assessing market viability, financial requirements, and operational
+                            planning for new ventures or expansions, providing a solid foundation for investment
+                            decisions.
+                        </p>
+                        <div class="mt-4 flex items-center text-primary font-semibold">
+                            <i data-lucide="arrow-right" class="w-5 h-5 mr-2"></i> Strategic Business Roadmaps
+                        </div>
+                    </div>
+
+                    <!-- Solution 2: Financial projections and cash flow management -->
+                    <div
+                        class="compliance-card relative p-6 pt-16 bg-white rounded-xl shadow-lg border-2 border-gray-100 transition-all duration-300 transform hover:-translate-y-1">
+                        <div class="step-number bg-primary text-white shadow-xl">2</div>
+                        <h3 class="mt-2 text-2xl font-bold text-gray-900">Projections & Cash Flow Management</h3>
+                        <p class="mt-3 text-gray-600">
+                            Developing robust financial models, forecasting future performance, and optimizing working
+                            capital for essential liquidity and financial stability.
+                        </p>
+                        <div class="mt-4 flex items-center text-primary font-semibold">
+                            <i data-lucide="arrow-right" class="w-5 h-5 mr-2"></i> Optimized Liquidity Planning
+                        </div>
+                    </div>
+
+                    <!-- Solution 3: Business valuations and restructuring support -->
+                    <div
+                        class="compliance-card relative p-6 pt-16 bg-white rounded-xl shadow-lg border-2 border-gray-100 transition-all duration-300 transform hover:-translate-y-1">
+                        <div class="step-number bg-primary text-white shadow-xl">3</div>
+                        <h3 class="mt-2 text-2xl font-bold text-gray-900">Valuations & Restructuring</h3>
+                        <p class="mt-3 text-gray-600">
+                            Expert business valuation services and strategic support for restructuring capital,
+                            processes, or organizational alignment during mergers, acquisitions, or internal changes.
+                        </p>
+                        <div class="mt-4 flex items-center text-primary font-semibold">
+                            <i data-lucide="arrow-right" class="w-5 h-5 mr-2"></i> Expert Valuation Support
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. ONGOING SUPPORT & COMPREHENSIVE COVERAGE (Budgeting/Forecasting & Financing/Cost Optimization) -->
+        <section id="ongoing-support" class="py-20 sm:py-12 bg-gray-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-extrabold text-secondary">Continuous Insight: Driving Performance</h2>
+                </div>
+
+                <div class="lg:grid lg:grid-cols-2 gap-8">
+
+                    <!-- Ongoing Support Card (Budgeting, forecasting, and performance analysis) -->
+                    <div
+                        class="group p-8 bg-white rounded-2xl shadow-xl border-t-4 border-primary hover:border-green-700 transition duration-300 mb-8 lg:mb-0 transform hover:scale-[1.01]">
+                        <i data-lucide="line-chart"
+                            class="w-8 h-8 text-primary mb-4 transition duration-300 group-hover:text-green-700"></i>
+                        <h3 class="text-2xl font-bold text-primary">Budgeting & Performance Analysis</h3>
+                        <p class="mt-3 text-lg text-gray-700">
+                            Implementation of rigorous budgeting cycles, detailed variance analysis, and performance
+                            metric tracking to ensure financial targets are met consistently.
+                        </p>
+                        <ul class="mt-4 space-y-2 text-gray-700">
+                            <li class="flex items-start"><i data-lucide="check"
+                                    class="w-5 h-5 text-primary mr-3 flex-shrink-0 mt-1"></i> Budget Variance Reporting
+                            </li>
+                            <li class="flex items-start"><i data-lucide="check"
+                                    class="w-5 h-5 text-primary mr-3 flex-shrink-0 mt-1"></i> KPI & Target Setting</li>
+                        </ul>
+                    </div>
+
+                    <!-- Comprehensive Coverage Card (Advisory on financing and cost optimization) -->
+                    <div
+                        class="group p-8 bg-white rounded-2xl shadow-xl border-t-4 border-secondary hover:border-green-700 transition duration-300 transform hover:scale-[1.01]">
+                        <i data-lucide="wallet"
+                            class="w-8 h-8 text-secondary mb-4 transition duration-300 group-hover:text-green-700"></i>
+                        <h3 class="text-2xl font-bold text-primary">Financing & Cost Optimization</h3>
+                        <p class="mt-3 text-lg text-gray-700">
+                            Strategic advice on capital structure, management of financing needs, and rigorous cost
+                            optimization programs to enhance overall profitability and efficiency.
+                        </p>
+                        <ul class="mt-4 space-y-2 text-gray-700">
+                            <li class="flex items-start"><i data-lucide="check"
+                                    class="w-5 h-5 text-secondary mr-3 flex-shrink-0 mt-1"></i> Cost Reduction
+                                Strategies</li>
+                            <li class="flex items-start"><i data-lucide="check"
+                                    class="w-5 h-5 text-secondary mr-3 flex-shrink-0 mt-1"></i> Capital Structure
+                                Guidance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer (Consistent) -->
+    <div id="footer"></div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="/js/script.js"></script>
+
+    <!-- Initialization Script -->
+    <script>
+        // 1. Initialize Lucide Icons
+        lucide.createIcons();
+
+        // 2. Mobile Menu Toggle (Simplified for this example)
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', function () {
+                document.getElementById('mobile-menu').classList.toggle('hidden');
+            });
+        }
+
+
+        // 3. Staggered Animation for Hero elements
+        document.addEventListener('DOMContentLoaded', () => {
+            const elements = document.querySelectorAll('.animate-fadeInUp');
+            elements.forEach((el) => {
+                // Ensure el.style.animationDelay is parsed as a number for calculation
+                const delay = el.style.animationDelay ? parseFloat(el.style.animationDelay) * 1000 : 0;
+                setTimeout(() => {
+                    el.style.opacity = 1;
+                    el.style.animationName = 'fadeInUp';
+                }, delay);
+            });
+        });
+    </script>
+
+</body>
+
+</html>
