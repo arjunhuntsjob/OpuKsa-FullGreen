@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Expert Team | OPU</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/LanguageTranslation.js"></script>
+    <!-- GSAP for scroll animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1F2937;
+        }
+
+        .text-primary {
+            color: var(--color-primary);
+        }
+
+        .bg-primary {
+            background-color: var(--color-primary);
+        }
+
+        .text-secondary {
+            color: var(--color-secondary);
+        }
+
+        .bg-secondary {
+            background-color: var(--color-secondary);
+        }
+
+        .bg-brand-gradient {
+            background: linear-gradient(90deg, var(--color-secondary) 0%, var(--secondary-color) 100%);
+        }
+
+        /* Custom Hover Effect for Team Cards */
+        .team-card-hover {
+            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+            border: 2px solid transparent;
+        }
+
+        .team-card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(5, 150, 105, 0.2), 0 8px 10px -6px rgba(5, 150, 105, 0.1);
+            border-color: var(--color-secondary);
+        }
+
+        /* Social icon hover for color shift */
+        .social-icon-hover {
+            transition: color 0.3s ease;
+        }
+
+        .social-icon-hover:hover {
+            color: var(--color-primary);
+        }
+
+        /* // */
+        .team-card-hover {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            /* make all cards equal height */
+        }
+
+
+        .team-card-hover h3 {
+            min-height: 3.5rem;
+            /* keeps name in same place */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .team-card-hover p.text-secondary {
+            min-height: 1.5rem;
+            /* keeps title aligned */
+            margin-bottom: 1rem;
+        }
+
+        .team-card-hover p.text-sm {
+            flex-grow: 1;
+            /* pushes icons to bottom */
+        }
+
+        .team-card-hover .flex.justify-center {
+            margin-top: auto;
+            /* keep icons aligned at bottom */
+        }
+    </style>
+</head>
+
+<body class="bg-white antialiased">
+
+    <!-- HEADER (Placeholder) -->
+    <div id="header"></div>
+
+    <!-- 1. HERO SECTION: Team Overview - NEW DARK DESIGN -->
+    <section class="team-section relative py-28 px-6 bg-primary text-white border-b border-secondary">
+        <div class="max-w-4xl mx-auto text-center">
+            <p class="text-xl font-medium text-secondary mb-4">— Meet the Experts —</p>
+            <h1 class="text-3xl sm:text-6xl font-extrabold mb-6">
+                Our Dedicated Professionals Driving Your Success
+            </h1>
+
+            <!-- Accent Line -->
+            <div class="w-20 h-1 bg-secondary mx-auto mb-8 rounded-full"></div>
+
+            <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+                We combine deep financial expertise, local regulatory knowledge, and a commitment to client-first
+                service, ensuring fast, affordable, and compliant solutions for every client.
+            </p>
+        </div>
+    </section>
+
+    <!-- 2. TEAM MEMBER GRID -->
+    <section class="team-section py-20 md:py-32 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                <!-- TEAM MEMBER 1: CEO -->
+                <div
+                    class="team-card-hover bg-white rounded-xl shadow-lg overflow-hidden text-center p-8 border-2 border-gray-100">
+                    <img src="image/OurTeam/Abdulrahman.jpeg" alt="Mr. Dinesh Jain"
+                        class="w-28 h-36 rounded-full mx-auto mb-6 object-cover border-4 border-secondary/50">
+                    <h3 class="text-2xl font-bold text-primary mb-1">Mr. Abdulrahman Khalid Salem Bajamil</h3>
+                    <p class="text-secondary font-semibold mb-4">Partner</p>
+                    <p class="text-sm text-gray-600 mb-6">
+                        A CPA with experience in auditing, zakat, and taxation across multiple industries. Mr.
+                        Abdulrahman has over two years as an auditor and four years as an accounting lecturer, combining
+                        practical expertise with academic insight.
+                    </p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" aria-label="LinkedIn" class="social-icon-hover text-secondary/70"><i
+                                data-lucide="linkedin" class="w-6 h-6"></i></a>
+                        <a href="#" aria-label="Email" class="social-icon-hover text-secondary/70"><i data-lucide="mail"
+                                class="w-6 h-6"></i></a>
+                    </div>
+                </div>
+                <div
+                    class="team-card-hover bg-white rounded-xl shadow-lg overflow-hidden text-center p-8 border-2 border-gray-100">
+                    <img src="/image/OurTeam/Rishab.jpeg" alt="MR.RISHABH SARAOGI"
+                        class="w-28 h-36 rounded-full mx-auto mb-6 object-cover border-4 border-secondary/50">
+                    <h3 class="text-2xl font-bold text-primary mb-1">Mr. Rishabh Saraogi</h3>
+                    <p class="text-secondary font-semibold mb-4">CEO, CPA & CFA</p>
+                    <p class="text-sm text-gray-600 mb-6">
+                        A seasoned financial leader with 18+ years of global experience across the GCC, US, and Asia.
+                        Mr. Rishab Saraogi, MBA from London Business School and ex-E&Y New York, drives strategic
+                        growth, audit excellence, and financial innovation aligned with global standards. His leadership
+                        continues to shape sustainable and high-performing financial ecosystems.
+                    </p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" aria-label="LinkedIn" class="social-icon-hover text-secondary/70"><i
+                                data-lucide="linkedin" class="w-6 h-6"></i></a>
+                        <a href="#" aria-label="Email" class="social-icon-hover text-secondary/70"><i data-lucide="mail"
+                                class="w-6 h-6"></i></a>
+                    </div>
+                </div>
+
+
+
+                <div
+                    class="team-card-hover bg-white rounded-xl shadow-lg overflow-hidden text-center p-8 border-2 border-gray-100">
+                    <img src="image/OurTeam/Dinesh.jpeg" alt="Mr. Dinesh Jain"
+                        class="w-28 h-36 rounded-full mx-auto mb-6 object-cover border-4 border-secondary/50">
+                    <h3 class="text-2xl font-bold text-primary mb-1">Mr. Dinesh Poonamchand Jain</h3>
+                    <p class="text-secondary font-semibold mb-4">Chartered Accountant</p>
+                    <p class="text-sm text-gray-600 mb-6">
+                        A finance professional with over 15 years of experience, holding qualifications in B.Com, FCA,
+                        ACS, and LLB. Mr. Dinesh Jain, an ex-KPMG professional, specializes in finance, law, and
+                        compliance, delivering accurate and reliable financial solutions with integrity and excellence.
+                    </p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" aria-label="LinkedIn" class="social-icon-hover text-secondary/70"><i
+                                data-lucide="linkedin" class="w-6 h-6"></i></a>
+                        <a href="#" aria-label="Email" class="social-icon-hover text-secondary/70"><i data-lucide="mail"
+                                class="w-6 h-6"></i></a>
+                    </div>
+                </div>
+
+                <div
+                    class="team-card-hover bg-white rounded-xl shadow-lg overflow-hidden text-center p-8 border-2 border-gray-100">
+                    <img src="/image/OurTeam/Satish.JPG" alt="MR.SATISH KUMAR VONNU"
+                        class="w-28 h-36 rounded-full mx-auto mb-6 object-cover border-4 border-secondary/50">
+                    <h3 class="text-2xl font-bold text-primary mb-1">Mr. Satish Kumar Vonnu</h3>
+                    <p class="text-secondary font-semibold mb-4">Chartered Accountant</p>
+                    <p class="text-sm text-gray-600 mb-6">
+                        A seasoned Chartered Accountant with over 20 years of professional experience, including 15
+                        years as a practicing CA. Mr. Satish is dedicated to delivering excellence in audit, taxation,
+                        and financial advisory — ensuring every engagement upholds the highest standards of accuracy,
+                        transparency, and trust.
+                    </p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" aria-label="LinkedIn" class="social-icon-hover text-secondary/70"><i
+                                data-lucide="linkedin" class="w-6 h-6"></i></a>
+                        <a href="#" aria-label="Email" class="social-icon-hover text-secondary/70"><i data-lucide="mail"
+                                class="w-6 h-6"></i></a>
+                    </div>
+                </div>
+
+                <div
+                    class="team-card-hover bg-white rounded-xl shadow-lg overflow-hidden text-center p-8 border-2 border-gray-100">
+                    <img src="./image/OurTeam/Jahir.jpeg" alt="Mr. Md Jahir Alam"
+                        class="w-28 h-36 rounded-full mx-auto mb-6 object-cover border-4 border-secondary/50">
+                    <h3 class="text-2xl font-bold text-primary mb-1">Mr. Md Jahir Alam</h3>
+                    <p class="text-secondary font-semibold mb-4">Chartered Accountant</p>
+                    <p class="text-sm text-gray-600 mb-6">
+                        A qualified Chartered Accountant with over 13 years of professional experience, including 7
+                        years post-qualification in auditing, taxation, accounting, fund management, and statutory
+                        compliance. Recognized for strong analytical skills, financial acumen, and a commitment to
+                        integrity and excellence in financial management.
+                    </p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" aria-label="LinkedIn" class="social-icon-hover text-secondary/70"><i
+                                data-lucide="linkedin" class="w-6 h-6"></i></a>
+                        <a href="#" aria-label="Email" class="social-icon-hover text-secondary/70"><i data-lucide="mail"
+                                class="w-6 h-6"></i></a>
+                    </div>
+                </div>
+
+                <div
+                    class="team-card-hover bg-white rounded-xl shadow-lg overflow-hidden text-center p-8 border-2 border-gray-100">
+                    <img src="image/OurTeam/Aaron.jpeg" alt="Mr.Aaron Tsifodze, C.A"
+                        class="w-28 h-36 rounded-full mx-auto mb-6 object-cover border-4 border-secondary/50">
+                    <h3 class="text-2xl font-bold text-primary mb-1">Mr.Aaron Tsifodze, C.A</h3>
+                    <p class="text-secondary font-semibold mb-4">Chartered Accountant</p>
+                    <p class="text-sm text-gray-600 mb-6">
+                        A Chartered Accountant with over 13 years of professional experience, specializing in financial
+                        accounting, cost accounting, capital budgeting, and audit project management. Aaron combines
+                        technical expertise with strong financial acumen to deliver accurate, transparent, and effective
+                        financial solutions across corporate and healthcare sectors.
+                    </p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" aria-label="LinkedIn" class="social-icon-hover text-secondary/70"><i
+                                data-lucide="linkedin" class="w-6 h-6"></i></a>
+                        <a href="#" aria-label="Email" class="social-icon-hover text-secondary/70"><i data-lucide="mail"
+                                class="w-6 h-6"></i></a>
+                    </div>
+                </div>
+
+                <div
+                    class="team-card-hover bg-white rounded-xl shadow-lg overflow-hidden text-center p-8 border-2 border-gray-100">
+                    <img src="image/OurTeam/Mane.jpeg" alt="Mr. Swapnil Mane"
+                        class="w-28 h-36 rounded-full mx-auto mb-6 object-cover border-4 border-secondary/50">
+                    <h3 class="text-2xl font-bold text-primary mb-1">Mr. Swapnil Mane</h3>
+                    <p class="text-secondary font-semibold mb-4">Chartered Accountant</p>
+                    <p class="text-sm text-gray-600 mb-6">
+                        A Chartered Accountant with over 14 years of professional experience, including 9 years as a
+                        practicing CA. Swapnil specializes in auditing, taxation, and financial advisory, delivering
+                        precise, transparent, and reliable financial solutions for diverse clients.
+                    </p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" aria-label="LinkedIn" class="social-icon-hover text-secondary/70"><i
+                                data-lucide="linkedin" class="w-6 h-6"></i></a>
+                        <a href="#" aria-label="Email" class="social-icon-hover text-secondary/70"><i data-lucide="mail"
+                                class="w-6 h-6"></i></a>
+                    </div>
+                </div>
+
+
+
+                <div
+                    class="team-card-hover bg-white rounded-xl shadow-lg overflow-hidden text-center p-8 border-2 border-gray-100">
+                    <img src="image/OurTeam/Aasim.jpeg" alt="Mr. CA AASIM SAYED"
+                        class="w-28 h-36 rounded-full mx-auto mb-6 object-cover border-4 border-secondary/50">
+                    <h3 class="text-2xl font-bold text-primary mb-1">Mr. Aasim Sayed</h3>
+                    <p class="text-secondary font-semibold mb-4">Certified Public Accountant</p>
+                    <p class="text-sm text-gray-600 mb-6">
+                        A Chartered Accountant with experience in auditing, taxation, and financial management in India
+                        and Saudi Arabia. Mr. Aasim specializes in accounting, payroll, VAT/WHT filings, and budgeting,
+                        delivering accurate and reliable financial solutions.
+                    </p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" aria-label="LinkedIn" class="social-icon-hover text-secondary/70"><i
+                                data-lucide="linkedin" class="w-6 h-6"></i></a>
+                        <a href="#" aria-label="Email" class="social-icon-hover text-secondary/70"><i data-lucide="mail"
+                                class="w-6 h-6"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 3. CTA SECTION -->
+    <section class="team-section py-24 text-center bg-primary text-white">
+        <div class="max-w-3xl mx-auto px-6">
+            <h2 class="text-4xl font-extrabold mb-6">
+                Ready to Work with Our Distinguished Team?
+            </h2>
+            <p class="text-gray-200 mb-8 text-lg">Schedule a consultation today to meet the specialist best suited for
+                your business needs.</p>
+            <a href="/contact.html"
+                class="inline-block bg-white px-8 py-4 rounded-full font-semibold text-green-800 shadow-lg hover:shadow-xl transition-all hover:opacity-90">
+                Book a Consultation
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER (Placeholder) -->
+    <div id="footer"></div>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // GSAP ScrollTrigger Animations for sections and cards
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Animate all sections
+        gsap.utils.toArray(".team-section").forEach((section) => {
+            gsap.from(section, {
+                opacity: 0,
+                y: 50,
+                duration: 0.8,
+                ease: "power2.out",
+                scrollTrigger: {
+                    trigger: section,
+                    start: "top 85%",
+                    toggleActions: "play none none reverse"
+                }
+            });
+        });
+
+        // Animate individual team cards
+        gsap.utils.toArray(".team-card-hover").forEach((card, i) => {
+            gsap.from(card, {
+                opacity: 0,
+                y: 20,
+                duration: 0.5,
+                delay: i * 0.1, // Stagger the animation slightly
+                ease: "power1.out",
+                scrollTrigger: {
+                    trigger: card,
+                    start: "top 90%",
+                    toggleActions: "play none none reverse"
+                }
+            });
+        });
+    </script>
+    <script src="/js/script.js"></script>
+
+</body>
+
+</html>

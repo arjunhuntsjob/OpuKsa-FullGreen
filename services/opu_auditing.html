@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CA | Expert Auditing Services</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Load Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="/js/LanguageTranslation.js"></script>
+    <!-- Configure Tailwind Colors & Font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+        :root {
+            /* Blue for primary actions/branding */
+            --color-primary: #064e3b;
+            /* Green for accents/success */
+            --color-secondary: #059669;
+        }
+
+        :root {
+            --primary-color: #064e3b;
+            --secondary-color: #10b981;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1F2937;
+            /* Dark text for contrast */
+        }
+
+        .text-primary {
+            color: var(--color-primary);
+        }
+
+        .bg-primary {
+            background-color: var(--color-primary);
+        }
+
+        .hover\:bg-primary:hover {
+            background-color: var(--color-primary);
+        }
+
+        .text-secondary {
+            color: var(--color-secondary);
+        }
+
+        .bg-secondary {
+            background-color: var(--color-secondary);
+        }
+
+        .hover\:bg-secondary:hover {
+            background-color: var(--color-secondary);
+        }
+
+        .border-primary {
+            border-color: var(--color-primary);
+        }
+
+        .hover\:text-secondary:hover {
+            color: var(--color-secondary);
+        }
+
+        /* Custom animation for staggered load (optional, but adds an advanced feel) */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fadeInUp {
+            animation: fadeInUp 0.5s ease-out forwards;
+            opacity: 0;
+            /* Start hidden */
+        }
+
+        /* Custom style for the process line */
+        .process-line {
+            background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+        }
+
+        .twelve h1 {
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            width: 160px;
+            text-align: center;
+            margin: auto;
+            white-space: nowrap;
+            padding-bottom: 13px;
+        }
+
+        .twelve h1:before {
+            background-color: #064e3b;
+            content: '';
+            display: block;
+            height: 3px;
+            width: 75px;
+            margin-bottom: 5px;
+        }
+
+        .twelve h1:after {
+            background-color: #064e3b;
+            content: '';
+            display: block;
+            position: absolute;
+            left: 50%;
+            height: 3px;
+            width: 75px;
+            margin-bottom: 0.25em;
+        }
+    </style>
+</head>
+
+<body class="bg-white antialiased">
+
+    <!-- Navbar (Reusing User's Structure for Consistency) -->
+    <div id="header"></div>
+    <!-- End Navbar -->
+
+    <main>
+        <div class="twelve pt-28 sm:pt-28 bg-gray-50">
+            <h1>AUDITING </h1>
+        </div>
+        <!-- 1. HERO SECTION: Trust and Transparency -->
+        <section id="auditing" class="py-10 sm:py-10 bg-gray-50">
+
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+                <div class="lg:grid lg:grid-cols-12 lg:gap-12 items-center">
+
+                    <!-- Content Left -->
+                    <div class="lg:col-span-6">
+                        <span class="text-secondary font-semibold uppercase tracking-widest animate-fadeInUp"
+                            style="animation-delay: 0.1s;">Verification & Assurance</span>
+                        <h1 class="mt-4 text-4xl sm:text-6xl font-extrabold text-gray-900 leading-tight animate-fadeInUp"
+                            style="animation-delay: 0.2s;">
+                            Unlocking <span class="text-primary">Trust</span> and Transparency
+                        </h1>
+                        <p class="mt-6 text-lg text-gray-600 animate-fadeInUp" style="animation-delay: 0.3s;">
+                            Our expert auditing services provide stakeholders with unbiased assurance on your financial
+                            statements, processes, and controls. We go beyond compliance to deliver actionable insights
+                            that drive value and mitigate risk.
+                        </p>
+                        <div class="mt-10 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 animate-fadeInUp"
+                            style="animation-delay: 0.4s;">
+                            <a href="/contact.html"
+                                class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-bold rounded-xl shadow-lg text-white bg-primary hover:bg-green-800 transition duration-300 transform hover:scale-[1.02]">
+                                Request a Consultation
+                            </a>
+                            <a href="#services"
+                                class="inline-flex items-center justify-center px-8 py-3 text-base font-bold rounded-xl border-2 border-primary text-primary bg-white hover:bg-green-50 transition duration-300">
+                                View Our Audit Pillars
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Image/Visual Right -->
+                    <div class="lg:col-span-6 mt-12 lg:mt-0 relative animate-fadeInUp" style="animation-delay: 0.5s;">
+                        <img src="/image/auditing2.jpg"
+                            alt="Abstract image of a chart and graph showing data integrity."
+                            class="w-full h-auto rounded-3xl shadow-2xl border-4 border-white transform hover:rotate-1 transition-transform duration-500 ease-in-out"
+                            onerror="this.onerror=null;this.src='https://placehold.co/600x400/1D4ED8/FFFFFF?text=Financial+Integrity';">
+                        <!-- Blue subtle background shape for depth -->
+                        <div
+                            class="hidden md:block absolute -bottom-8 -right-8 w-48 h-48 bg-primary/10 rounded-full -z-10">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- NEW SECTION: Auditing Services Overview -->
+        <section class="py-20 sm:py-12 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-extrabold text-gray-900">Auditing Services</h2>
+                    <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+                        Independent audit and assurance solutions to strengthen trust, compliance, and financial
+                        transparency.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 text-gray-700">
+
+                    <!-- Service 1 -->
+                    <div class="flex items-start space-x-4">
+                        <i data-lucide="file-text" class="w-8 h-8 text-primary mt-1"></i>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900">External Audit</h3>
+                            <p class="text-gray-600">
+                                Statutory audits in line with IFRS, and Saudi regulations to ensure fair and
+                                transparent reporting.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="flex items-start space-x-4">
+                        <i data-lucide="check-square" class="w-8 h-8 text-primary mt-1"></i>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900">Review Engagements</h3>
+                            <p class="text-gray-600">
+                                Limited assurance services on interim or annual financial statements — faster, lighter
+                                alternatives to audits.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="flex items-start space-x-4">
+                        <i data-lucide="search" class="w-8 h-8 text-primary mt-1"></i>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900">Forensic & Investigative Audit</h3>
+                            <p class="text-gray-600">
+                                Thorough examination of fraud, financial irregularities, and disputes to support legal
+                                or internal proceedings.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="flex items-start space-x-4">
+                        <i data-lucide="shield" class="w-8 h-8 text-primary mt-1"></i>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900">Internal Controls Assessment</h3>
+                            <p class="text-gray-600">
+                                Evaluation of risk management, compliance, and governance frameworks to improve
+                                operational efficiency and reliability.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- NEW SECTION: Internal Financial Controls & Internal Auditing -->
+        <section id="ifc" class="py-20 sm:py-12 bg-gray-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+                <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+
+                    <!-- Text Content Left -->
+                    <div>
+                        <span class="text-primary font-semibold uppercase tracking-widest">IFC & Internal Audit</span>
+                        <h2 class="mt-4 text-4xl font-extrabold text-gray-900">Strengthening Internal Financial Controls
+                        </h2>
+                        <p class="mt-6 text-lg text-gray-600">
+                            Internal Financial Controls (IFC) are vital for safeguarding your organization's assets and
+                            ensuring the accuracy of financial reporting. Our internal audit services go beyond
+                            compliance — they are strategic, risk-based, and focused on driving long-term performance
+                            and resilience.
+                        </p>
+
+                        <div class="mt-10 space-y-6">
+
+                            <!-- Point 1 -->
+                            <div class="flex items-start space-x-4">
+                                <i data-lucide="activity" class="w-6 h-6 text-secondary mt-1"></i>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-900">Robust Risk & Control Frameworks
+                                    </h3>
+                                    <p class="text-gray-600">We help implement and assess internal controls aligned with
+                                        COSO and SOX principles for effective risk mitigation.</p>
+                                </div>
+                            </div>
+
+                            <!-- Point 2 -->
+                            <div class="flex items-start space-x-4">
+                                <i data-lucide="alert-triangle" class="w-6 h-6 text-secondary mt-1"></i>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-900">Fraud Prevention & Detection</h3>
+                                    <p class="text-gray-600">Early identification of control gaps to prevent financial
+                                        misstatements, operational inefficiencies, and fraud.</p>
+                                </div>
+                            </div>
+
+                            <!-- Point 3 -->
+                            <div class="flex items-start space-x-4">
+                                <i data-lucide="bar-chart-3" class="w-6 h-6 text-secondary mt-1"></i>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-900">Process Improvement & Optimization
+                                    </h3>
+                                    <p class="text-gray-600">Internal audits that deliver practical recommendations for
+                                        improving processes, reducing costs, and enhancing compliance.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Image Right -->
+                    <div class="mt-12 lg:mt-0 relative">
+                        <img src="/image/auditing4.png"
+                            alt="Internal audit process showing team collaboration, documents, and control systems."
+                            class="w-full h-auto rounded-3xl shadow-2xl border-4 border-white transform hover:scale-[1.01] transition-transform duration-500 ease-in-out">
+                        <!-- Decorative Shape -->
+                        <div
+                            class="hidden md:block absolute -bottom-8 -left-8 w-48 h-48 bg-primary/10 rounded-full -z-10">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. AUDIT PILLARS SECTION -->
+        <section id="services" class="py-20 sm:py-12 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+                <div class="text-center">
+                    <h2 class="text-4xl font-extrabold text-gray-900">Our Core Auditing Pillars</h2>
+                    <p class="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">Comprehensive assurance tailored to your
+                        organizational needs, ensuring both compliance and performance optimization.</p>
+                </div>
+
+                <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                    <!-- Pillar 1: Financial Audit -->
+                    <div
+                        class="group p-8 bg-white border border-gray-100 rounded-2xl shadow-xl transition-all duration-300 hover:shadow-2xl hover:border-primary transform hover:-translate-y-1">
+                        <i data-lucide="landmark"
+                            class="w-12 h-12 text-primary group-hover:text-secondary transition duration-300"></i>
+                        <h3 class="mt-6 text-2xl font-bold text-gray-900">Statutory Financial Audit</h3>
+                        <p class="mt-4 text-gray-600">Independent examination of financial statements to express an
+                            opinion on their fairness and compliance with relevant reporting frameworks (e.g., IFRS,
+                            GAAP).</p>
+                        <!-- <a href="#"
+                            class="mt-6 inline-flex items-center text-primary font-semibold group-hover:text-secondary transition duration-300">
+                            Learn More <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                        </a> -->
+                    </div>
+
+                    <!-- Pillar 2: Compliance Audit -->
+                    <div
+                        class="group p-8 bg-white border border-gray-100 rounded-2xl shadow-xl transition-all duration-300 hover:shadow-2xl hover:border-primary transform hover:-translate-y-1">
+                        <i data-lucide="shield-check"
+                            class="w-12 h-12 text-primary group-hover:text-secondary transition duration-300"></i>
+                        <h3 class="mt-6 text-2xl font-bold text-gray-900">Regulatory Compliance</h3>
+                        <p class="mt-4 text-gray-600">Reviewing operations for adherence to specific laws, government
+                            regulations, internal policies, and contractual obligations (e.g., VAT, Zakat, Tax laws).
+                        </p>
+                        <!-- <a href="#"
+                            class="mt-6 inline-flex items-center text-primary font-semibold group-hover:text-secondary transition duration-300">
+                            Learn More <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                        </a> -->
+                    </div>
+
+                    <!-- Pillar 3: Controls Review -->
+                    <div
+                        class="group p-8 bg-white border border-gray-100 rounded-2xl shadow-xl transition-all duration-300 hover:shadow-2xl hover:border-primary transform hover:-translate-y-1">
+                        <i data-lucide="lock-open"
+                            class="w-12 h-12 text-primary group-hover:text-secondary transition duration-300"></i>
+                        <h3 class="mt-6 text-2xl font-bold text-gray-900">Internal Controls Review</h3>
+                        <p class="mt-4 text-gray-600">Assessment of internal systems and processes to ensure asset
+                            safeguarding, operational efficiency, and prevention/detection of fraud and error.</p>
+                        <!-- <a href="#"
+                            class="mt-6 inline-flex items-center text-primary font-semibold group-hover:text-secondary transition duration-300">
+                            Learn More <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                        </a> -->
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. PROCESS SECTION: Visual Flow -->
+        <section class="py-20 sm:py-12 bg-gray-50/70">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+                <div class="text-center">
+                    <h2 class="text-4xl font-extrabold text-gray-900">Our Data-Driven Audit Process</h2>
+                    <p class="mt-4 text-lg text-gray-600 max-w-4xl mx-auto">A systematic, risk-based approach designed
+                        for efficiency and minimal disruption to your daily operations.</p>
+                </div>
+
+                <div class="mt-16 relative">
+                    <!-- Horizontal Line connecting the steps (hidden on mobile) -->
+                    <div class="hidden md:block absolute top-10 left-0 right-0 h-1 process-line rounded-full"></div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-white">
+
+                        <!-- Step 1 -->
+                        <div
+                            class="relative text-center md:text-left p-6 bg-green-900 rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-[1.02]">
+                            <div
+                                class="absolute md:relative md:mb-4 top-[-25px] md:top-0    left-1/2 transform -translate-x-1/2 md:translate-x-0 w-20 h-20 flex items-center justify-center rounded-full bg-green-900 text-white font-extrabold text-2xl border-4 border-white shadow-lg">
+                                1
+                            </div>
+                            <div class="mt-10 md:mt-0">
+                                <h3 class="text-xl font-bold text-white">Planning & Scoping</h3>
+                                <p class="mt-2 text-gray-100 text-sm">We define objectives, assess inherent risk, and
+                                    tailor the audit scope to your unique industry and control environment.</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div
+                            class="relative text-center md:text-left p-6 bg-sky-950 rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-[1.02]">
+                            <div
+                                class="absolute md:relative md:mb-4  top-[-25px] md:top-0  left-1/2 transform -translate-x-1/2 md:translate-x-0 w-20 h-20 flex items-center justify-center rounded-full bg-sky-950 text-white font-extrabold text-2xl border-4 border-white shadow-lg">
+                                2
+                            </div>
+                            <div class="mt-10 md:mt-0">
+                                <h3 class="text-xl font-bold text-white">Fieldwork & Execution</h3>
+                                <p class="mt-2 text-gray-100 text-sm">Comprehensive testing of controls and substantive
+                                    verification of transactions, leveraging data analytics tools for efficiency.</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div
+                            class="relative text-center md:text-left p-6 bg-emerald-900 rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-[1.02]">
+                            <div
+                                class="absolute md:relative md:mb-4  top-[-25px] md:top-0  left-1/2 transform -translate-x-1/2 md:translate-x-0 w-20 h-20 flex items-center justify-center rounded-full bg-emerald-900 text-white font-extrabold text-2xl border-4 border-white shadow-lg">
+                                3
+                            </div>
+                            <div class="mt-10 md:mt-0">
+                                <h3 class="text-xl font-bold text-white">Reporting & Opinion</h3>
+                                <p class="mt-2 text-gray-100 text-sm">Issuance of the formal audit report, including a
+                                    clear opinion and detailed management letters with constructive recommendations.</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div
+                            class="relative text-center md:text-left p-6 bg-cyan-900 rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-[1.02]">
+                            <div
+                                class="absolute md:relative md:mb-4  top-[-25px] md:top-0  left-1/2 transform -translate-x-1/2 md:translate-x-0 w-20 h-20 flex items-center justify-center rounded-full bg-cyan-900 text-white font-extrabold text-2xl border-4 border-white shadow-lg">
+                                4
+                            </div>
+                            <div class="mt-10 md:mt-0">
+                                <h3 class="text-xl font-bold text-white">Follow-up & Advisory</h3>
+                                <p class="mt-2 text-gray-100 text-sm">Post-audit support to assist your team in
+                                    implementing control improvements and addressing identified weaknesses promptly.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. WHY CHOOSE US: Differentiators with Blue/Green focus -->
+        <section class="py-20 sm:py-12 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+                <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+
+                    <!-- Content Left -->
+                    <div>
+                        <span class="text-primary font-semibold uppercase tracking-widest">Our Commitment</span>
+                        <h2 class="mt-4 text-4xl font-extrabold text-gray-900">Why Partner with OPU for Auditing?</h2>
+                        <p class="mt-6 text-lg text-gray-600">We blend deep industry knowledge with the latest
+                            technology to provide an audit that is both efficient and highly insightful.</p>
+
+                        <div class="mt-10 space-y-8">
+
+                            <!-- Feature 1 -->
+                            <div class="flex items-start group">
+                                <i data-lucide="trending-up"
+                                    class="w-8 h-8 text-secondary flex-shrink-0 mt-1 transition-transform group-hover:scale-110 duration-300"></i>
+                                <div class="ml-4">
+                                    <h3 class="text-xl font-bold text-gray-900">Actionable, Data-Driven Insights</h3>
+                                    <p class="mt-1 text-gray-600">We utilize cutting-edge data analytics to identify
+                                        trends, outliers, and potential risks far beyond traditional sampling methods.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Feature 2 -->
+                            <div class="flex items-start group">
+                                <i data-lucide="gavel"
+                                    class="w-8 h-8 text-secondary flex-shrink-0 mt-1 transition-transform group-hover:scale-110 duration-300"></i>
+                                <div class="ml-4">
+                                    <h3 class="text-xl font-bold text-gray-900">Unwavering Regulatory Expertise</h3>
+                                    <p class="mt-1 text-gray-600">Stay ahead of complex and evolving local and
+                                        international compliance standards with our team of seasoned regulatory experts.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Feature 3 -->
+                            <div class="flex items-start group">
+                                <i data-lucide="fingerprint"
+                                    class="w-8 h-8 text-secondary flex-shrink-0 mt-1 transition-transform group-hover:scale-110 duration-300"></i>
+                                <div class="ml-4">
+                                    <h3 class="text-xl font-bold text-gray-900">Integrity, Independence, Excellence</h3>
+                                    <p class="mt-1 text-gray-600">Our commitment to professional ethics ensures an
+                                        objective, independent audit opinion that enhances your reputation and
+                                        creditability.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Image Right -->
+                    <div class="mt-12 lg:mt-0 relative">
+                        <img src="/image/auditing3.jpg"
+                            alt="A professional team reviewing audit documents and controls."
+                            class="w-full h-auto rounded-3xl shadow-2xl border-4 border-secondary/50 transform hover:scale-[1.01] transition-transform duration-500 ease-in-out">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. FINAL CTA BAR -->
+        <section id="contact" class="py-16 bg-primary">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl text-center">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Ready for a Higher Standard of Assurance?
+                </h2>
+                <p class="mt-4 text-xl text-blue-100">Contact our senior partners today to discuss your organization's
+                    specific auditing needs.</p>
+                <a href="/contact.html"
+                    class="mt-8 inline-flex items-center justify-center px-10 py-4 text-lg font-bold rounded-xl shadow-2xl text-primary bg-white hover:bg-gray-100 transition duration-300 transform hover:scale-105">
+                    Schedule a Meeting <i data-lucide="mail" class="w-5 h-5 ml-3"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Page Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+
+            // 🔹 Initialize Lucide Icons
+            lucide.createIcons();
+
+            // 🔹 Mobile Menu Toggle
+            const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+            const mobileMenu = document.getElementById("mobile-menu");
+
+            if (mobileMenuBtn && mobileMenu) {
+                mobileMenuBtn.addEventListener("click", () => {
+                    mobileMenu.classList.toggle("hidden");
+
+                    // Change icon between menu and X
+                    const icon = mobileMenuBtn.querySelector("i");
+                    if (icon) {
+                        const isHidden = mobileMenu.classList.contains("hidden");
+                        icon.setAttribute("data-lucide", isHidden ? "menu" : "x");
+                        lucide.createIcons(); // re-render icon
+                    }
+                });
+            }
+
+            // 🔹 Mobile Services Dropdown Toggle
+            const mobileServicesBtn = document.getElementById("mobile-services-button");
+            const mobileServicesDropdown = document.getElementById("mobile-services-dropdown");
+
+            if (mobileServicesBtn && mobileServicesDropdown) {
+                mobileServicesBtn.addEventListener("click", () => {
+                    const isExpanded = mobileServicesBtn.getAttribute("aria-expanded") === "true";
+                    mobileServicesBtn.setAttribute("aria-expanded", String(!isExpanded));
+
+                    // Toggle dropdown visibility
+                    mobileServicesDropdown.classList.toggle("opacity-0", isExpanded);
+                    mobileServicesDropdown.classList.toggle("invisible", isExpanded);
+                    mobileServicesDropdown.classList.toggle("opacity-100", !isExpanded);
+                    mobileServicesDropdown.classList.toggle("visible", !isExpanded);
+                    mobileServicesDropdown.style.pointerEvents = isExpanded ? "none" : "auto";
+                });
+            }
+
+            // 🔹 Fade-in Animation for Hero Elements (Optional)
+            const fadeElements = document.querySelectorAll(".animate-fadeInUp");
+            fadeElements.forEach((el) => {
+                const delay = el.style.animationDelay
+                    ? parseFloat(el.style.animationDelay) * 1000
+                    : 0;
+                setTimeout(() => {
+                    el.style.opacity = 1;
+                    el.style.animationName = "fadeInUp";
+                }, delay);
+            });
+        });
+    </script>
+
+    <!-- External Script -->
+    <script src="/js/script.js"></script>
+
+</body>
+
+</html>
